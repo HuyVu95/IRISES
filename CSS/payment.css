@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Payment */
+#bgpayment{
+	height: auto;
+	background-color: #D4CACD;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+}
+.titlepayment{
+	color: #BB2649;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.pricesub{
+	text-align: right;
+}
+#infodeli{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	border-top-left-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+#bgpaymentmethod{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #E9E9E9;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+#paycod, #paybank{
+	background-color: white;
+	border-radius: 15px;
+}
+#codpay{
+	text-align: left;
+}
+#paybank{
+	margin-top: 15px;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+#paycod{
+	padding-top: 5px;
+}
+/*====ONLY EXTRA LARGE====*/
+@media (min-width:1440px){
+
+}
+/*====ONLY LARGE====*/
+@media (min-width: 992px) and (max-width:1439px){
+	
+}
+/*====ONLY MEDIUM====*/
+@media (min-width: 768px) and (max-width:991px){
+	#infodeli,#bgpaymentmethod{
+		border-radius: 15px;
+	}
+	#bgpaymentmethod{
+		margin-top: 20px;
+	}
+}
+/*====ONLY SMALL====*/
+@media (min-width: 576px) and (max-width:767px){
+	#infodeli,#bgpaymentmethod{
+		border-radius: 15px;
+	}
+	#bgpaymentmethod{
+		margin-top: 20px;
+	}
+}
+/*====ONLY EXTRA SMALL====*/
+@media (max-width: 575px){
+	#infodeli,#bgpaymentmethod{
+		border-radius: 15px;
+	}
+	#bgpaymentmethod{
+		margin-top: 20px;
+	}
+}

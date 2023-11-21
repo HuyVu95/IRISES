@@ -1,0 +1,765 @@
+@charset "utf-8";
+/* CSS Product */
+
+/*====FILTER====*/
+#filter{
+	height: 100%;
+	background-color: #FFFFFF;
+	border-left: solid 3pt #BB2649;
+	border-right: solid 0.5pt #707070;
+	padding-bottom: 20px;
+	margin-top: 15px;
+	border-bottom: solid 1pt #707070;
+}
+.filterbox{
+	margin-top: 15px;
+	font-size: 10pt;
+	color: #000000;
+	border-right: solid 1pt #D7D5D5;
+	border-bottom: solid 1pt #707070;
+	padding-bottom: 15px;
+}
+.filterbox i{
+	float: right;
+	font-size: 11pt;
+	padding-right: 5px;
+	margin-bottom: 10px;
+	color: #BB2649;
+}
+.filterbox span{
+    padding-left: 15px;
+}
+#bgfilter{
+	height: 40px;
+	background-color: #BB2649;
+	border-bottom-right-radius: 15px;
+	padding: 0px;
+	border-left: solid 1pt #707070;
+}
+#Boloc{
+	height: 40px;
+	background-color: #BB2649;
+	font-weight: bold;
+	border-bottom: solid 1pt #707070;
+	color: #FFFFFF;
+	padding-top: 5px;
+}
+#Boloc i{
+	float: left;
+	font-size: 14pt;
+	padding-right: 8px;
+	padding-top: 1px;
+}
+p3{
+	float: left;
+	font-size: 14pt;
+	font-weight: bold;
+	padding-top: 1px;
+}
+.filterbox p4{
+	font-size: 12pt;
+	font-weight: bold;
+	color: #BB2649;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.price-input {
+    width: 100%;
+    display: flex;
+    margin: 5px 0 20px;
+}
+.filterbox strong{
+    font-weight: 600;
+}
+
+.price-input .field {
+    display: flex;
+    width: 100%;
+    height: 45px;
+    align-items: center;
+}
+.field input {
+    width: 50px;
+    outline: none;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #999;
+    -moz-appearance: textfield;
+}
+	input[type="number"]::-webkit-outer-spin-button,
+	input[type="number"]::-webkit-inner-spin-button {
+	  -webkit-appearance: none;
+}
+.price-input .separator {
+    width: 50px;
+    margin-left: 45px;
+    margin-right: 55px;
+    font-weight: 400;
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+}
+.slider {
+    height: 5px;
+    position: relative;
+    background: #ddd;
+    border-radius: 5px;
+}
+.slider .progress {
+    height: 100%;
+    left: auto;
+    right: auto;
+    position: absolute;
+    border-radius: 5px;
+    background: #BB2649;
+}
+.range-input {
+    position: relative;
+    margin-bottom: 10px;
+}
+.range-input input {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    top: -5px;
+    background: none;
+    pointer-events: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+    height: 17px;
+    width: 17px;
+    border-radius: 50%;
+    background: #BB2649;
+    pointer-events: auto;
+    -webkit-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+input[type="range"]::-moz-range-thumb {
+    height: 17px;
+    width: 17px;
+    border: none;
+    border-radius: 50%;
+    background: #BB2649;
+    pointer-events: auto;
+    -moz-appearance: none;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.05);
+}
+
+#applyfilter{
+	height: 60px;
+	
+}
+#applyfilter h1{
+	font-family: mycontentfont;
+	font-weight: bold;
+	font-size: 14pt;
+	color: #FFFFFF
+}
+#applyfilter h1:hover {
+    color: #000000;
+}
+
+#sapxep{
+	height: 50px;
+	text-align: center;
+	padding: 0px;
+	border-bottom: solid 1pt #E8E3E3;
+}
+#sapxep ul{
+	life-style-type: none;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+#sapxep ul li{
+	display: flex;
+	float: left;
+}
+#sapxep ul li a{
+	display: flex;
+	float: left;
+	color: #000000;
+	text-decoration: none;
+	height: 50px;
+	position: relative;
+	font-size: 12pt;
+	font-weight: 600;
+	transition: opacity 250ms ease-in-out;
+	padding-top: 17px;
+	margin-right: 60px;
+}
+#sapxep ul li a:hover{
+	background-color: #FFFFFF;
+	border-bottom: solid 2pt #BB2649;
+	scrollbar-color:#222 #aaa;
+	transition: opacity 250ms ease-in-out;
+	color: #BB2649;
+}
+
+/*====mobileFILTER====*/
+#bgmbfilter{
+	height: 40px;
+	background-color: #F7F7F7;
+	margin-bottom: 4px;
+	padding-left: 0px;
+	padding-right: 0px;
+	
+}
+#bgmobilefiter{
+	margin: 0px;
+}
+#triggermobilefilter, #triggermobilesapxep{
+	display: block;
+	text-align: center;
+	color: #000000;
+	font-size: 12pt;
+	font-family: mycontentfont;
+	height: 40px;
+	padding-top: 6px;
+}
+
+#mobilefilterbtn, #sapxepmobilebtn{
+	background-color: #FFFFFF;
+	border: solid 4pt #F7F7F7;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+#triggermobilefilter i, #triggermobilesapxep i{
+	padding-right: 10px;
+}
+#sapxepmobilebtn{
+	border-left: solid 4pt #F7F7F7;
+}
+#mobilefilterbtn{
+	border-right: solid 4pt #F7F7F7;
+}
+#sapxepmobilebtn{
+	height:50px;
+	text-align: center;
+}
+#sapxepmobilebtn ul{
+	life-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+#sapxepmobilebtn ul li{
+	life-style-type: none;
+	text-decoration: none;
+}
+#sapxepmobilebtn ul li a{
+	display: block;
+	color: #666565;
+	text-decoration: none;
+	height: 50px;
+	position: relative;
+	font-size: 10pt;
+	font-family: mycontentfont;
+	font-weight: 600;
+	padding-top: 17px;
+}
+
+/*====CONTENT title====*/
+.featured{
+	color: #000000;
+	font-weight: bold;
+	font-size: 16pt;
+	padding-top: 16px;
+}
+
+
+/*====product====*/
+#products{
+	color: #000000;
+}
+#contentprod{
+	margin-top: 16px;
+}
+
+h1{
+	font-size: 12pt;
+	color: #BB2649
+}
+
+p1{
+	font-size: 12pt;
+	color: #000000;
+	font-weight: 900;
+	padding-top: 5px;
+}
+.cartbtn{
+	position: absolute;
+	z-index: 2;
+	right: 0px;
+	bottom: 94px;
+	margin-left: 15px;
+	margin-right: 15px;
+	padding-left: 65px;
+	padding-bottom: 3px;
+	background-color: #BB2649;
+	width: 245px;
+	color: #FFFFFF;
+	font-size: 14pt;
+	opacity: 0;
+	transition: 0.3 all;
+}
+.probox:hover .cartbtn{
+	opacity: 1;
+	transition: 0.3 all;
+}
+.productbox:hover .cartbtn{
+	opacity: 1;
+	transition: 0.3 all;
+}
+.cartbtn:hover{
+	color:#000000 !important; 
+	text-decoration: none;
+}
+
+
+/*====PAGENUMBER====*/
+#pagenumb{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.page-link{
+	color: #BB2649;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+}
+#pagenumb ul li{
+	width: 21px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#pagenumb p1{
+	color: #000000;
+	font-weight: 300;
+	font-size: 11pt;
+	padding-bottom: 15px;
+	text-align: center;
+}
+.pagination{
+	padding-top: 15px;
+}
+.pagination ul{
+	padding: 0px;
+}
+.page-item.active .page-link {
+	z-index: 6;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding:0px;
+	border-radius: 50%;
+	background-color: #BB2649;
+}
+.page-item.active{
+	border: solid 1pt #BB2649;
+	background-color: #BB2649;
+	border-radius: 50%;
+}
+.page-link:hover {
+    z-index: 2;
+    color: #000;
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+/*==========Only Extra Large==========*/
+@media (min-width: 1200px){
+    #sapxep{
+	margin-left: 15px;
+}
+	.active span{
+	border-bottom: solid 2pt #BB2649;
+}
+}
+
+/*==========Only Large==========*/
+@media (min-width: 992px) and (max-width: 1199px){
+	h1{
+	font-size: 12pt;
+	width: 100%;
+}
+	#breadcrumb ul li a{
+	font-size: 12pt;
+	padding-right: 10px;
+}
+	.field input {
+    width: 48px;
+    font-size: 15px;
+}
+	.price-input .separator {
+    margin-left: 25px;
+    margin-right: 36px;
+}
+	.filterbox strong {
+    font-size: 9pt;
+}
+	#applyfilter h1 {
+    font-size: 12pt;
+}
+	.secondarybtn {
+    padding-top: 10px;
+}
+	.hoverimg{
+	width: 200px;
+}
+	.cartbtn{
+	padding-left: 43px;
+	width: 200px;
+	font-size: 13pt;
+}
+	#sapxep{
+	margin-left: 15px;
+}
+	#sapxep ul li a{
+	font-size: 11pt;
+	padding-top: 17px;
+	margin-right: 40px;
+}
+	.active span{
+	border-bottom: solid 2pt #BB2649;
+}
+	#adprobox img {
+ 	height: 200px;
+}
+	.adcontent {
+	top: 15%;
+}
+	.adbtn {
+	height: 28px;
+	padding-top: 1px;
+	margin-top: 15px;
+}
+	.adcontent p2 {
+    font-size: 15pt;
+}
+	.adcontent h2 {
+    font-size: 44pt;
+    margin-bottom: 1px;
+    line-height: 1.0;
+}
+	.adbtn p1 {
+    font-size: 10pt;
+	padding-top: 3px;
+}
+	.adcontent1 {
+    padding-bottom: 12px;
+    padding-top: 0px;
+}
+	#adprobox1 {
+    margin-top: 28px;
+}
+	
+	#adprobox1 h2 {
+    font-size: 18pt;
+    width: 80%;
+	padding-top: 15px;
+	margin-bottom: 3px;
+}
+	.adbtn1 {
+    margin-top: 12px;
+	padding-top: 0px;
+}
+	.adbtn1 p1 {
+    font-size: 10pt;
+}
+}
+/*==========Only Medium==========*/
+@media (min-width: 768px) and (max-width: 991px){
+	h1{
+	font-size: 12pt;
+	width: 100%;
+}
+	p3{
+	font-size: 14pt;
+	text-align: center;
+}
+	#breadcrumb{
+	padding: 0px;
+}
+	.featured{
+	margin-top: 8px;
+	margin-bottom: 15px;
+	padding: 0px;
+}
+	.filterbox{
+	margin-top: 0px;
+	padding-top: 10px;
+	border: solid 1pt #BB2649;
+}
+	.hoverimg{
+	width: 200px;
+}
+	.cartbtn{
+	padding-left: 43px;
+	width: 200px;
+	font-size: 13pt;
+}
+	#filter{
+	border: none;
+}
+	#applyfilter{
+	padding: 0;
+	font-size: 10pt;
+}
+	#applyfilter h1{
+	font-size: 12pt;
+}
+	.field input {
+    width: 45px;
+    font-size: 14px;
+}
+	.price-input .separator {
+    margin-left: 60px;
+    margin-right: 70px;
+}
+	#mobilefilterbtn, #sapxepmobilebtn{
+	background-color: #ffffff;
+}
+	.active span{
+	color: #BB2649;
+	font-weight: bold;
+}
+	#bgmbsapxep{
+	height: 300px;
+}
+	#sapxep{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+	#sapxep ul li{
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	#sapxep ul li a{
+	display: block;
+	width: 100%;
+	font-size: 12pt;
+	border: solid 1pt #BB2649;
+	color:#000000;
+	padding-top: 10px;
+}
+	.cartbtn{
+	opacity: 1;;
+}
+}
+
+/*==========Only Small==========*/
+@media (min-width:576px) and (max-width:767px){
+	h1{
+	font-size: 12pt;
+	width: 100%;
+}
+	p3{
+	font-size: 14pt;
+	text-align: center;
+}
+	#breadcrumb{
+	padding: 0px;
+}
+	.featured{
+	margin-top: 8px;
+	margin-bottom: 15px;
+	padding: 0px;
+}
+	.filterbox{
+	margin-top: 0px;
+	padding-top: 10px;
+	border: solid 1pt #BB2649;
+}
+	#filter{
+	border: none;
+}
+	#applyfilter{
+	padding: 0;
+	font-size: 10pt;
+}
+	#applyfilter h1{
+	font-size: 12pt;
+}
+	#mobilefilterbtn, #sapxepmobilebtn{
+	background-color: #ffffff;
+}
+	.field input {
+    width: 40px;
+    font-size: 13px;
+}
+	.price-input .separator {
+    margin-left: 26px;
+    margin-right: 36px;
+}
+	
+	.active span{
+	color: #BB2649;
+	font-weight: bold;
+}
+	#bgmbsapxep{
+	height: 300px;
+}
+	#sapxep{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+	#sapxep ul li{
+	display: block !important;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	#sapxep ul li a{
+	display: block !important;
+	width: 100%;
+	font-size: 12pt;
+	border: solid 1pt #BB2649;
+	color:#000000;
+	padding-top: 10px;
+}
+	.hoverimg{
+	width: 235px;
+}
+	.cartbtn{
+	right: -5px;
+	padding-left: 65px;
+	width: 235px;
+	font-size: 13pt;
+	opacity: 1;;
+}
+	.productbox{
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+	.probox{
+	height: 332.6px;
+	}
+}
+
+/*==========Only Extra Small==========*/
+@media (max-width:575px){
+h1{
+	font-size: 12pt;
+	width: 100%;
+}
+	p3{
+	font-size: 14pt;
+	text-align: center;
+}
+	#breadcrumb{
+	padding-left:  15px;
+}
+	.featured{
+	margin-top: 8px;
+	margin-bottom: 15px;
+	padding: 0px;
+	padding-left: 15px;
+}
+	#bgmobilefilter{
+	padding: 0 15px;
+}
+	#mobilefilterbtn{
+    margin-left: 0px;
+	margin-right: 0px;
+}
+	.filterbox{
+	margin-top: 0px;
+	padding-top: 10px;
+	border: solid 1pt #BB2649;
+}
+	.filterbox p4 {
+    font-size: 10pt;
+}
+	#filter{
+	border: none;
+}
+	#applyfilter{
+	padding: 0;
+	font-size: 10pt;
+}
+	#applyfilter h1{
+	font-size: 12pt;
+}
+	.field input {
+    width: 40px;
+    font-size: 13px;
+}
+	.price-input .separator {
+    margin-left: 12px;
+    margin-right: 21px;
+}
+	#mobilefilterbtn, #sapxepmobilebtn{
+	background-color: #ffffff;
+}
+	#sapxepmobilebtn {
+	height: 40px;
+  	border: none;
+}
+	#triggermobilesapxep {
+    padding-top: 8px;
+}
+	.active span{
+	color: #BB2649;
+	font-weight: bold;
+}
+	.hoverimg{
+	width: 175px;
+}
+	.cartbtn{
+	right: -5px;
+	padding-left: 35px;
+	width: 175px;
+	font-size: 13pt;
+	opacity: 1;
+}
+	#products{
+	padding: 0;
+}
+	#bgmbsapxep{
+	height: 300px;
+	margin: 0px;
+}
+	#bgsapxep{
+    border: solid 4pt #F7F7F7;
+}
+	#sapxep{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+	#sapxep ul li{
+	display: block !important;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+	#sapxep ul li a{
+	display: block !important;
+	width: 100%;
+	font-size: 12pt;
+	border: solid 1pt #BB2649;
+	color:#000000;
+	padding-top: 10px;
+}
+
+	.probox{
+	height: 272.6px;
+}
+	.productbox{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+}

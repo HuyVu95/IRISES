@@ -1,0 +1,83 @@
+@charset "utf-8";
+/* CSS danh cho Login */
+#bglogin{
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+#imglogin{
+	background: url("../imgs/login_img.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+}
+#formlogin h3{
+	padding-top: 20px;
+	color: #BB2649;
+	text-align: center;
+}
+#formlogin hr{
+	width: 150px;
+	border: solid 1pt #BB2649;
+}
+#sendbtn, #resetbtn{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+#sendbtn{
+	width: 100%;
+	background-color: #BB2649;
+	color: white;font-weight: bold;
+}
+#sendbtn:hover{
+	background-color: #610016;
+}
+#resetbtn{
+	width: 100%;
+	background: white;
+	border: 1px solid #D4CACD;
+	color: #BB2649;
+}
+#label{
+	margin-right: 15px;
+}
+#Signup{
+	text-align: right;
+}
+#Signup a{
+	color: black;
+	text-decoration: none;
+	transition: all ease .5s;
+}
+#Signup a:hover{
+	color: #BB2649;
+	transition: all ease .5s;
+}
+/*====ONLY SMALL====*/
+@media (min-width: 576px) and (max-width:767px){
+	#formlogin{
+		border: 1pt solid #D4CACD;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 15px;
+	}
+	#bglogin{
+		background: url("../imgs/login_img.jpg"); background-size: cover;background-repeat: no-repeat;height: 420px;
+	}
+}
+/*====ONLY EXTRA SMALL====*/
+@media (max-width: 575px){
+	#formlogin{
+		border: 1pt solid #D4CACD;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 15px;
+	}
+	#bglogin{
+		background: url("../imgs/login_img.jpg"); background-size: cover;background-repeat: no-repeat;height: 420px;}
+		#Signup{
+		text-align: center;}
+}
+}

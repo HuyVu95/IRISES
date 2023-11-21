@@ -1,0 +1,264 @@
+@charset "utf-8";
+/* CSS danh cho trang Home */
+	
+.pagename{
+	margin-top: 20px;
+	color: #BB2649;
+	text-align: center;
+}
+.pagename hr{
+	width: 150px;
+	border: solid 1pt #BB2649;
+}
+/*== BUTTON ==*/
+.primarybutton{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	height: 38px;
+	background-color: #BB2649;
+	border: none;
+	border-radius: 15px;
+	color: white;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 18pt;
+	font-weight: bold;
+}
+.primarybutton:hover{
+	background-color: #930022;
+}
+.secondarybutton{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+	width: 100%;
+	height: 37px;
+	background-color: white;
+	border: solid 1pt #D4CACD;
+	border-radius: 5px;
+	color: #D4CACD;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.secondarybutton:hover{
+	background-color: white;
+	border: solid 1pt #BB2649;
+	color: #BB2649;
+}
+/*==== banner1 ====*/
+#bgbanner1{
+	background-color: aqua;
+	padding: 0px;
+	height: auto;
+}
+#bgbanner2{
+	background: url("../imgs/banner991.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*==== content1 ====*/
+#bgcontent1,#bgcontent2{
+	background-color: #BB2649;
+	height: auto;
+	padding-bottom: 20px;
+}
+#ourstory{
+	padding-top: 15px;
+	color: white;
+	font-size: 12pt;
+}
+#imgourstory{
+	height: auto;
+}
+#bestseller{
+	margin-top: 40px;
+	padding-top: 15px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-color: #BB2649;
+	color: white;
+	text-align: center;
+}
+#bestseller hr{
+	width: 150px;
+	border: solid 1pt white;
+}
+#productbox{
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	background-color: #D4CACD;
+	margin-bottom: 40px;
+}
+.productbox{
+	margin-bottom: 5px;
+	color: black;
+	margin-top: 20px;
+}
+
+.productbox a{
+	text-decoration: none;
+	color: #BB2649;
+}
+.productbox a:hover{
+	color: #930022;
+	transition: all ease .5s;
+}
+.primarybtn a{
+	display: block;
+	height: 40px;
+	border-radius: 15px;
+	background-color: #BB2649;
+	color: white;
+	text-align: center;
+	font-size: 18pt;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 3px;
+	margin-bottom: 40px;
+}
+.primarybtn a:hover{
+	background-color: #930022;
+}
+.secondarybtn{
+	display: block;
+	height: 36px;
+	border-radius: 15px;
+	background-color: white;
+	border: solid 1pt #D4CACD;
+	color: #D4CACD;
+	text-align: center;
+	font-size: 18pt;
+	font-weight: bold;
+	text-decoration: none;
+	padding-top: 3px;
+	margin-bottom: 40px;
+}
+.secondarybtn a:hover{
+	background-color: #D4CACD;
+	color: white;
+}
+/*== BLOG ==*/
+#bgblog{
+	background-color: #D4CACD;
+	height: auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Subcribe */
+#bgsubcribe{
+	padding-bottom: 40px;
+	padding-top: 20px;
+	background-color: #F1F1F1;
+}
+#formsubcribe h4{
+	padding-top: 20px;
+	text-align: center;
+}
+#subcribefill{
+	height: 40px;
+	border-bottom-left-radius: 20px;
+	border-top-left-radius: 20px;
+	font-size: 12pt;
+	padding-left: 10px;
+	margin-top: 10px;
+	color: #BABABA;
+	float: left;
+	border: none;
+}
+#subcribebtn{
+	height: 40px;
+	margin-top: 10px;
+	float: left;
+	border: none;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #BB2649;
+	color: white;
+}
+/*====BLOG====*/
+#blog h4{
+	color: #BB2649;
+}
+#blog a{
+	color: #BB2649;
+	font-size: 14pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+#blog a:hover{
+	color: #930022;
+}
+.imgblogsmall{
+	margin-top: 15px;
+}
+/*====ONLY EXTRA LARGE====*/
+@media (min-width:1440px){
+	#bgbanner2{height: 500px;}
+	#bgcontent1{ padding-top: 20px;}
+	#subcribefill{
+		width: 85%;
+	}
+	#subcribebtn{
+		width: 15%;
+	}
+	#imgourstory{
+		margin-top: 20px;
+	}
+	#imgourstory2{
+		margin-top: 40px;
+	}
+	#subcribebtn:hover{
+	background-color: #930022;color: white;}
+
+}
+/*====ONLY LARGE====*/
+@media (min-width: 992px) and (max-width:1439px){
+	#subcribefill{
+		width: 85%;
+	}
+	#subcribebtn{
+		width: 15%;
+	}
+	#imgourstory{
+		margin-top: 20px;
+	}
+	#imgourstory2{
+		margin-top: 40px;
+	}
+	#subcribebtn:hover{
+	background-color: #930022;color: white;}
+	#bgbanner2{height: 400px;}
+}
+/*====ONLY MEDIUM====*/
+@media (min-width: 768px) and (max-width:991px){
+	#subcribefill{
+		width: 80%;
+	}
+	#subcribebtn{
+		width: 20%;
+	}
+	#bgbanner2{height: 300px;}
+}
+/*====ONLY SMALL====*/
+@media (min-width: 576px) and (max-width:767px){
+	#subcribefill{
+		width: 80%;
+	}
+	#subcribebtn{
+		width: 20%;
+	}
+	#bgbanner2{height: 200px;}
+}
+/*====ONLY EXTRA SMALL====*/
+@media (max-width: 575px){
+	#subcribefill{
+		width: 80%;
+	}
+	#subcribebtn{
+		width: 20%;
+	}
+	#bgbanner2{height: 150px;}
+}

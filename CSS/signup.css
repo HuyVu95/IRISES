@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS danh cho Login */
+#bgsignup{
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+#imgsignup{
+	background: url("../imgs/signup_img.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0px;
+	margin: 0px;
+}
+#formsignup h3{
+	padding-top: 20px;
+	color: #BB2649;
+	text-align: center;
+}
+#formsignup hr{
+	width: 150px;
+	border: solid 1pt #BB2649;
+}
+#sendbtn, #resetbtn{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 5px;
+}
+#sendbtn{
+	width: 100%;
+	background-color: #BB2649;
+	color: white;font-weight: bold;
+}
+#resetbtn{
+	width: 100%;
+	background: white;
+	border: 1px solid #D4CACD;
+	color: #BB2649;
+}
+#label{
+	margin-right: 15px;
+}
+#login{
+	text-align: center;
+}
+#login a{
+	color: black;
+	text-decoration: none;
+	transition: all ease .5s;
+}
+#login a:hover{
+	color: #BB2649;
+	transition: all ease .5s;
+}
+
+/*====ONLY SMALL====*/
+@media (min-width: 576px) and (max-width:767px){
+	#formsignup{
+		border: 1pt solid #D4CACD;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 15px;
+	}
+	#bgsignup{background: url("../imgs/signup_img.png");background-size: cover;background-repeat: no-repeat;}
+}
+/*====ONLY EXTRA SMALL====*/
+@media (max-width: 575px){
+	#formsignup{
+		border: 1pt solid #D4CACD;
+		background-color: rgba(255, 255, 255, 0.5);
+		border-radius: 15px;
+	}
+	#bgsignup{background: url("../imgs/signup_img.png");background-size: cover;background-repeat: no-repeat;}
+}
