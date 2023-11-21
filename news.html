@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- title -->
+	<title>Irises Eyewear - News</title>
+	<!-- favicon -->
+	<link rel="shortcut icon" type="image/png" href="assets/img/favicon.png">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="assets/css/all.min.css">
+	<!-- bootstrap -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+	<!-- main style -->
+	<link rel="stylesheet" href="assets/css/main.css">
+	<!-- Bootstrap -->
+	<link href="assets/css/bootstrap-4.4.1.css" rel="stylesheet">
+	<link href="assets/fontawesome-free-6/pro/css/all.min.css" rel="stylesheet">
+	<link href="assets/css/product_prj.css" rel="stylesheet">
+	<link href="CSS/common.css" rel="stylesheet">
+	<link href="CSS/home.css" rel="stylesheet">
+	<!-- JavaScript -->   
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script> 
+	<script src="assets/js/bootstrap-4.4.1.js"></script>
+	<!-- title -->
+	<title>Single Product</title>
+
+
+	
+	<script>
+		$(document).ready(function(){
+				var offset = 200;
+				var duration = 550;
+				$("#bgmobilenavi").hide();
+			   $("#blackscreen").hide();
+			   $("#bgmobilesearch").hide();
+				$("#triggermobilenavi").click(function(){
+				  $("#bgmobilenavi").slideToggle();
+				  $("#blackscreen").fadeToggle();
+				  $("#bgmobilesearch").slideUp();
+				  $("#triggermobilesearch i").removeClass("fa-xmark");
+				  $("#triggermobilesearch i").addClass("fa-magnifying-glass"); })
+				$("#triggermobilesearch").click(function(){
+				  $("#bgmobilesearch").slideToggle();
+				  $("#bgmobilenavi").slideUp();
+				  $("#blackscreen").fadeOut();
+				  $("#triggermobilesearch i").toggleClass("fa-magnifying-glass fa-xmark");
+			  })
+			  
+			  $("#blackscreen").click(function(){
+				  $("#bgmobilenavi").slideUp();
+				  $(this).fadeOut();
+			  })
+			  
+			  $("#closemobilenavi").click(function(){
+				  $("#bgmobilenavi").slideUp();
+				  $("#blackscreen").fadeOut();
+			  })
+				
+				$("#footercontentinfo").slideUp(); /*Ẩn Footer info*/
+				$("#footercontentpolicy").slideUp(); /*Ẩn Footer info*/
+				$("#footercontentlink").slideUp(); /*Ẩn Footer info*/
+				
+				$("#footerinfo_m").click(function(){
+					$("#footercontentinfo").slideToggle()}); /*Ẩn hiện Footer info khi click*/
+				$("#footerpolicy").click(function(){
+					$("#footercontentpolicy").slideToggle()}); /*Ẩn hiện Footer policy khi click*/
+				$("#footerlink_m").click(function(){
+					$("#footercontentlink").slideToggle()}); /*Ẩn hiện Footer link khi click*/
+				
+			/*==== OWL-CAROUSEL ====*/
+				$(".owl-carousel").owlCarousel({
+				  loop: true,
+				  dots: true,
+				  autoplay: true,
+				  autoplayTimeout: 2000,
+				  autoplayHoverPause: true,
+				  responsiveClass: true,
+				  responsive:{
+					  0:{items:2,},
+					  480:{items:2,},
+					  576:{items:2,},
+					  768:{items:3,},
+					  992:{items:4,},
+					  1200:{items:4,},
+						  }
+				  })
+				
+				/*Backontop*/
+				$(window).scroll(function(){
+					if ($(this).scrollTop() > offset){
+					   $(".back-on-top").fadeIn(duration);  
+				   } else {
+					  $(".back-on-top").fadeOut(duration); 
+			  }
+				});
+				
+				$(".back-on-top").click(function(event){
+					event.preventDefault();
+					$("html, body").animate({scrollTop: 0}, duration);
+					return false;
+				})
+				
+				/*filter*/
+				if(screen.width < 769){
+				  $("#filter").hide();
+			  } else {
+				  $("#filter").show();
+			  }
+			
+			  $("#triggermobilefilter").click(function(){ 
+				  $("#filter").slideToggle();
+				  $("#triggermobilefilter i").toggleClass("fa-filter fa-filter");
+			  })
+			
+				if(screen.width < 769){
+				  $("#bgmbsapxe").hide();
+			  } else {
+				  $("#bgmbsapxe").show();
+			  }
+			
+			  $("#triggermobilesapxep").click(function(){ 
+				  $("#bgmbsapxep").slideToggle();
+				  $("#triggermobilesapxep i").toggleClass("fa-list fa-list");
+			  })
+					  
+			  
+			  $("#triggerbrand").click(function(){
+				  $("#brand").slideToggle();
+				  $("#triggerbrand i").toggleClass("fa-chevron-down fa-chevron-right");
+			  })
+			
+				$("#triggerstyle").click(function(){
+				  $("#style").slideToggle();
+				  $("#triggerstyle i").toggleClass("fa-chevron-down fa-chevron-right");
+			  })
+			
+			  $("#triggercolor").click(function(){
+				  $("#color").slideToggle();
+				  $("#triggercolor i").toggleClass("fa-chevron-down fa-chevron-right");
+			  })
+				  
+			  $("#triggersize").click(function(){
+				  $("#size").slideToggle();
+				  $("#triggersize i").toggleClass("fa-chevron-down fa-chevron-right");
+			  })
+			
+			  $("#triggerprice").click(function(){
+				  $("#price, #slide, #range").slideToggle();
+				  $("#triggerprice i").toggleClass("fa-chevron-down fa-chevron-right");
+			  })
+			  
+		  })
+		</script>
+
+</head>
+<body>
+  <div id="toppage"></div>
+	  <div class="container-fluid" id="blackscreen"></div>
+	  <!-- Header -->
+	  <div class="container-fluid d-none d-lg-block" id="bgheader">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-3
+							  col-lg-3 d-none d-lg-block" id="aboutstore">
+					  <ul>
+					  <li><a href="Contact_us.html">Contact Us</a></li>
+					  <li><a href="">Store</a></li>
+				  </ul>
+				  </div>
+				  <div class="col-xl-5 offset-xl-1
+							  col-lg-5 offset-lg-1 d-none d-lg-block" id="searchbox">
+					  <form>
+					  <input type="text" placeholder="Search here..." id="searchfill">
+					  <button id="searchbtn"><i class="fa-regular fa-magnifying-glass"></i></button>
+				  </form>
+					  </div><!-- Searchbox -->
+				  
+				  <div class="col-xl-2 offset-xl-1
+							  col-lg-2 offset-lg-1 d-none d-lg-block" id="usericons">
+					  <ul>
+						  <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+						  <li><a href="cart.html"><i class="fa-regular fa-bag-shopping"></i></a></li>
+						  <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+					  
+				  </ul>
+				  </div> <!-- usericons -->
+			  </div>
+		  
+		  </div>
+	  
+	  </div>
+	  <!-- Navi -->
+	  <div class="container-fluid" id="bgnavi">
+	  <div class="container">
+			  <div class="row">
+				  <div class="col-md-2
+							  col-sm-3
+							  col-3 d-lg-none" id="icon3line">
+					  <ul>
+				 <li><a id="triggermobilenavi"><i class="fa-regular fa-bars"></i></a></li>
+				 <li><a id="triggermobilesearch"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+				  </ul>
+				  </div><!----icon3line-->
+				  
+				  <div class="col-xl-2 offset-xl-0
+							  col-lg-3 offset-lg-0
+							  col-md-4 offset-md-2
+							  col-sm-4 offset-sm-1
+							  col-6" id="logonavi"><a href="Home.html"><img src="imgs/logo-03W_185x60px.png"></a></div>
+				  <div class="col-xl-7 offset-xl-3
+							  col-lg-9  d-none d-lg-block" id="navi">
+					  <ul>
+						  <li><a href="promotion.html">PROMOTION</a></li>
+						  <li><a href="news.html" class="clickpage">BLOG</a></li>
+						  <li><a href="product.html">PRODUCTS</a></li>
+						  <li><a href="About_us.html">ABOUT US</a></li>
+						  <li><a href="Home.html">HOME</a></li>
+					  </ul>
+				  </div> <!-- navi -->
+				  
+				  <div class="col-md-2 offset-md-2
+							  col-sm-3 offset-sm-1
+						  col-3 d-lg-none" id="mobileicons">
+			 <ul>
+				  <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+				  <li><a href="cart.html"><i class="fa-regular fa-bag-shopping"></i></a></li></ul>
+			  </div><!--mobileicons-->
+				  
+			  </div>
+		  </div>
+	  </div> <!-- bgnavi -->
+	  
+	  <!--MOBILE NAVI-->
+	  <div class="container-fluid d-lg-none" id="bgmobilenavi">
+		  <div class="row">
+			  <div class="col-md-12 col-sm-12 col-12" id="mobilenavi">
+			  <ul>
+					<li><a href="Home.html">HOME</a></li>
+				    <li><a href="About_us.html">ABOUT US</a></li>
+					<li><a href="product.html">PRODUCTS</a></li>
+					<li><a href="news.html">BLOG</a></li>
+					<li><a href="promotion.html">PROMOTION</a></li>
+					
+				  	<li><button id="closemobilenavi"><i class="fa-regular fa-xmark"></i></button></li>
+				  </ul></div><!--mobile navi-->
+		  </div>
+	  </div><!--bgmobilenavi-->
+	  
+	  <!--MOBILE SEARCH-->
+	  <div class="container-fluid d-lg-none" id="bgmobilesearch">
+		  <div class="row">
+			  <div class="col-md-12
+						  col-sm-12
+						  col-12" id="mobilesearch">
+				  <form>
+					  <input type="text" placeholder="Search here..." id="mobilesearchfill">
+					  <button id="mobilesearchbtn">
+					  <i class="fa-regular fa-magnifying-glass"></i></button>
+				  </form>
+			  </div>
+		  </div>
+	  </div>
+	  <!--------------------------------------------------------------------------------------->
+	  
+	<!-- breadcrumb-section -->
+	<div class="breadcrumb-section breadcrumb-bg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 offset-lg-2 text-center">
+					<div class="breadcrumb-text">
+						<p>Useful Information</p>
+						<h1>News Article</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end breadcrumb section -->
+
+	<!-- latest news -->
+	<div class="latest-news mt-150 mb-150">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-1"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">Star Formation Continues in 30 Doradus</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> NASA</span>
+								<span class="date"><i class="fas fa-calendar"></i> June 8, 2023</span>
+							</p>
+							<p class="excerpt">New research from the Stratospheric Observatory for Infrared Astronomy (SOFIA) has shown that the magnetic fields...</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-2"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">Experience Apple's Vision Pro glasses</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> Admin</span>
+								<span class="date"><i class="fas fa-calendar"></i> June 10, 2023</span>
+							</p>
+							<p class="excerpt">Actual use shows that Vision Pro has the ability to accurately recognize eyes, hand gestures and reproduce surreal...</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-3"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">Team Makes Orion’s First Artemis Mission Possible</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> NASA</span>
+								<span class="date"><i class="fas fa-calendar"></i> Mar 27, 2023</span>
+							</p>
+							<p class="excerpt">Worldwide Team Makes Orion’s First Artemis Mission Possible, flew by the Moon twice coming within 80 miles...</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-4"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">Discover where whales once appeared</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> Admin</span>
+								<span class="date"><i class="fas fa-calendar"></i> 23 July, 2023</span>
+							</p>
+							<p class="excerpt">De Gi - Vung Boi has become a favorite destination for tourists interested in scuba diving and exploring...</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-5"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">Inside the Michelin-starred restaurant in Hanoi</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> Admin</span>
+								<span class="date"><i class="fas fa-calendar"></i> 23 July, 2023</span>
+							</p>
+							<p class="excerpt">Among the four Michelin-starred restaurants in Vietnam, Hibana by Koki is the only place that does not...</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-md-6">
+					<div class="single-latest-news">
+						<a href="single-news.html"><div class="latest-news-bg news-bg-6"></div></a>
+						<div class="news-text-box">
+							<h3><a href="single-news.html">NASA’s Lunar Flashlight to Fly by Earth</a></h3>
+							<p class="blog-meta">
+								<span class="author"><i class="fas fa-user"></i> NASA</span>
+								<span class="date"><i class="fas fa-calendar"></i> Mar 27, 2023</span>
+							</p>
+							<p class="excerpt">With its primary mission over, the CubeSat will zoom by Earth late Tuesday, May 16, and NASA’s...</p>
+							<a href="single-news.html" class="read-more-btn">read more <i class="fas fa-angle-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-12 text-center">
+							<div class="pagination-wrap">
+								<ul>
+									<li><a href="#">Prev</a></li>
+									<li><a href="#">1</a></li>
+									<li><a class="active" href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">Next</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- end latest news -->
+
+
+
+	
+	<!-- Footer -->
+	  <div class="container-fluid" id="bgfooter">
+		  <div class="container">
+			  <div class="row">
+				  <!--footer mobile-->
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footerframe" id="footerinfo_m">Information <i class="fa-regular fa-chevron-down"></i></div>
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footercontent" id="footercontentinfo">
+					  <p><strong>Address:</strong> 06 Thai Van Lung, Ben Nghe Ward, District 1, Ho Chi Minh City <br><strong>Tel:</strong> 028 39951703 - <strong>Fax:</strong> 028 3995 1702<br>Support call center (08:00-21:00, free)<br><strong>Call to buy:</strong> 1800545457 (key 1)<br><strong>Complaint:</strong> 1800565656 (2nd key)</p></div>
+				  <!--footer mobile 2-->
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footerframe" id="footerpolicy">Policy <i class="fa-regular fa-chevron-down"></i></div>
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footercontent" id="footercontentpolicy">
+					  <ul>
+						  <li><a href="">Warranty and Returns</a></li>
+						  <li><a href="">Shipping Policy</a></li>
+						  <li><a href="">Membership Policy</a></li>
+						  <li><a href="">Information privacy policy</a></li>
+					  </ul>
+				  </div>
+				  <!--footer mobile 3-->
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footerframe" id="footerlink_m">Link <i class="fa-regular fa-chevron-down"></i></div>
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footercontent" id="footercontentlink">
+					  <ul>
+						  <li><a href="About_us.html">Story</a></li>
+						  <li><a href="">Q &amp; A</a></li>
+						  <li><a href="">Career</a></li>
+						  <li><a href="news.html">News</a></li>
+						  <li><a href="promotion.html">PROMOTION</a></li>
+						  <li><a href="Contact_us.html">Complaints</a></li>
+					  </ul>
+				  </div>
+				  
+				  <div class="col-xl-3
+							  col-lg-4" id="logofooter"><a href="#toppage"><img src="imgs/logo-02R_185x60px.png"></a><br><b>IRISES EYEWEAR JSC</b></div>
+				  
+				  <div class="col-xl-3
+							  col-lg-4 d-none d-lg-block" id="footerinfo"><b>Information</b><br>
+					  <p><strong>Address:</strong> 06 Thai Van Lung, Ben Nghe Ward, District 1, Ho Chi Minh City <br><strong>Tel:</strong> 028 39951703 - <strong>Fax:</strong> 028 3995 1702<br>Support call center (08:00-21:00, free)<br><strong>Call to buy:</strong> 1800545457 (key 1)<br><strong>Complaint:</strong> 1800565656 (2nd key)</p>
+				  </div><!-- footerinfo -->
+				  
+				  <div class="col-xl-3
+							  col-lg-2 d-none d-lg-block" id="footermenu1"><b>Policy</b>
+					  <ul>
+						  <li><a href="">Warranty and Returns</a></li>
+						  <li><a href="">Shipping Policy</a></li>
+						  <li><a href="">Membership Policy</a></li>
+						  <li><a href="">Information privacy policy</a></li>
+					  </ul>
+				  </div><!-- footermenu1 -->
+				  
+				  <div class="col-xl-3
+							  col-lg-2 d-none d-lg-block" id="footerlink"><b>Link</b>
+					  <ul>
+						  <li><a href="About_us.html">Story</a></li>
+						  <li><a href="">Q &amp; A</a></li>
+						  <li><a href="">Career</a></li>
+						  <li><a href="news.html">News</a></li>
+						  <li><a href="promotion.html">PROMOTION</a></li>
+						  <li><a href="Contact_us.html">Complaints</a></li>
+					  </ul>
+				  </div><!-- footerlink -->
+			  </div>
+		  </div>
+		  <div class="container">
+			  <div class="row">
+			  <div class="col-xl-5
+						  col-lg-5
+						  col-md-12
+						  col-sm-12
+						  col-12" id="certificate"><strong>Certificate of business registration: 18071995</strong></div>
+			  <div class="col-xl-3 offset-xl-4
+						  col-lg-4 offset-lg-3
+						  col-md-12
+						  col-sm-12
+						  col-12" id="footersocial"><strong>Follow us</strong> <a href=""><i class="fa-brands fa-facebook"></i></a> | <a href=""><i class="fa-brands fa-instagram"></i></a> | <a href=""><i class="fa-brands fa-youtube"></i></a></div>
+		  </div>
+		  </div>
+	  </div> <!--bgfooter-->
+		<div class="container-fluid" id="bgsubfooter">
+			<div class="container">
+			<div class="row justify-content-center">
+			<div class="col-xl-12
+						col-lg-12
+						col-sm-12
+						col-md-12
+						col-12" id="subfooter">Copyright 2023 <i class="fa-regular fa-copyright"></i> <b>IRISES EYEWEAR</b></div>
+			</div>
+	  </div>
+	  </div> 
+  <!-- Back to top button -->
+	  <a href="" class="back-on-top" style="display: inline"><i class="fa-solid fa-circle-chevron-up"></i></a>	  
+
+	<!-- footer -->
+
+	<!-- end footer -->
+	<!-- jquery -->
+	<script src="assets/js/jquery-1.11.3.min.js"></script>
+	<!-- bootstrap -->
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- count down -->
+	<script src="assets/js/jquery.countdown.js"></script>
+	<!-- isotope -->
+	<script src="assets/js/jquery.isotope-3.0.6.min.js"></script>
+	<!-- waypoints -->
+	<script src="assets/js/waypoints.js"></script>
+	<!-- owl carousel -->
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<!-- magnific popup -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- mean menu -->
+	<script src="assets/js/jquery.meanmenu.min.js"></script>
+	<!-- sticker js -->
+	<script src="assets/js/sticker.js"></script>
+	<!-- main js -->
+	<script src="assets/js/main.js"></script>
+
+</body>
+</html>

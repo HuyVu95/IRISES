@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Irises Eyewear - Payment</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="CSS/common.css" rel="stylesheet">
+	  <link href="CSS/font_awesome/css/all.min.css" rel="stylesheet">
+	  <link href="CSS/home.css" rel="stylesheet">
+	  <link href="CSS/payment.css" rel="stylesheet">
+	  <link href="js/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	  <link href="js/owlcarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+	<!-- JavaScript --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+	  <script src="js/owlcarousel/owl.carousel.min.js"></script>
+	 
+	  <script>
+		  $(document).ready(function(){
+			 $("#bgmobilenavi").hide();
+			 $("#blackscreen").hide();
+			 $("#bgmobilesearch").hide();
+			  $("#triggermobilenavi").click(function(){
+				$("#bgmobilenavi").slideToggle();
+				$("#blackscreen").fadeToggle();
+				$("#bgmobilesearch").slideUp();
+				$("#triggermobilesearch i").removeClass("fa-xmark");
+				$("#triggermobilesearch i").addClass("fa-magnifying-glass"); })
+			  $("#triggermobilesearch").click(function(){
+				$("#bgmobilesearch").slideToggle();
+				$("#bgmobilenavi").slideUp();
+				$("#blackscreen").fadeOut();
+				$("#triggermobilesearch i").toggleClass("fa-magnifying-glass fa-xmark");
+			})
+			
+			$("#blackscreen").click(function(){
+				$("#bgmobilenavi").slideUp();
+				$(this).fadeOut();
+			})
+			
+			$("#closemobilenavi").click(function(){
+				$("#bgmobilenavi").slideUp();
+				$("#blackscreen").fadeOut();
+			})
+			  
+			  $("#footercontentinfo").slideUp(); /*Ẩn Footer info*/
+			  $("#footercontentpolicy").slideUp(); /*Ẩn Footer info*/
+			  $("#footercontentlink").slideUp(); /*Ẩn Footer info*/
+			  
+			  $("#footerinfo_m").click(function(){
+				  $("#footercontentinfo").slideToggle()}); /*Ẩn hiện Footer info khi click*/
+			  $("#footerpolicy").click(function(){
+				  $("#footercontentpolicy").slideToggle()}); /*Ẩn hiện Footer policy khi click*/
+			  $("#footerlink_m").click(function(){
+				  $("#footercontentlink").slideToggle()}); /*Ẩn hiện Footer link khi click*/
+
+			  
+			  
+				  });
+	  </script>
+  </head>
+  <body>
+	  <div id="toppage"></div>
+	  <div class="container-fluid" id="blackscreen"></div>
+	  <!-- Header -->
+	  <div class="container-fluid d-none d-lg-block" id="bgheader">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-3
+							  col-lg-3 d-none d-lg-block" id="aboutstore">
+					  <ul>
+					  <li><a href="Contact_us.html">Contact Us</a></li>
+					  <li><a href="">Store</a></li>
+				  </ul>
+				  </div>
+				  <div class="col-xl-5 offset-xl-1
+							  col-lg-5 offset-lg-1 d-none d-lg-block" id="searchbox">
+					  <form>
+					  <input type="text" placeholder="Search here..." id="searchfill">
+					  <button id="searchbtn"><i class="fa-regular fa-magnifying-glass"></i></button>
+				  </form>
+					  </div><!-- Searchbox -->
+				  
+				  <div class="col-xl-2 offset-xl-1
+							  col-lg-2 offset-lg-1 d-none d-lg-block" id="usericons">
+					  <ul>
+						  <li><a href=""><i class="fa-regular fa-heart"></i></a></li>
+						  <li><a href="cart.html"><i class="fa-regular fa-bag-shopping"></i></a></li>
+						  <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+					  
+				  </ul>
+				  </div> <!-- usericons -->
+			  </div>
+		  
+		  </div>
+	  
+	  </div>
+	  <!-- Navi -->
+	  <div class="container-fluid" id="bgnavi">
+	  <div class="container">
+			  <div class="row">
+				  <div class="col-md-2
+							  col-sm-3
+							  col-3 d-lg-none" id="icon3line">
+					  <ul>
+				 <li><a id="triggermobilenavi"><i class="fa-regular fa-bars"></i></a></li>
+				 <li><a id="triggermobilesearch"><i class="fa-regular fa-magnifying-glass"></i></a></li>
+				  </ul>
+				  </div><!----icon3line-->
+				  
+				  <div class="col-xl-2 offset-xl-0
+							  col-lg-3 offset-lg-0
+							  col-md-4 offset-md-2
+							  col-sm-4 offset-sm-1
+							  col-6" id="logonavi"><a href="Home.html"><img src="imgs/logo-03W_185x60px.png"></a></div>
+				  <div class="col-xl-7 offset-xl-3
+							  col-lg-9  d-none d-lg-block" id="navi">
+					  <ul>
+						  <li><a href="promotion.html">PROMOTION</a></li>
+						  <li><a href="news.html">BLOG</a></li>
+						  <li><a href="product.html" class="clickpage">PRODUCTS</a></li>
+						  <li><a href="About_us.html">ABOUT US</a></li>
+						  <li><a href="Home.html">HOME</a></li>
+					  </ul>
+				  </div> <!-- navi -->
+				  
+				  <div class="col-md-2 offset-md-2
+							  col-sm-3 offset-sm-1
+						  col-3 d-lg-none" id="mobileicons">
+			 <ul>
+				  <li><a href="login.html"><i class="fa-regular fa-user"></i></a></li>
+				  <li><a href="cart.html"><i class="fa-regular fa-bag-shopping"></i></a></li></ul>
+			  </div><!--mobileicons-->
+				  
+			  </div>
+		  </div>
+	  </div> <!-- bgnavi -->
+	  
+	  <!--MOBILE NAVI-->
+	  <div class="container-fluid d-lg-none" id="bgmobilenavi">
+		  <div class="row">
+			  <div class="col-md-12 col-sm-12 col-12" id="mobilenavi">
+			  <ul>
+					<li><a href="Home.html">HOME</a></li>
+				    <li><a href="About_us.html">ABOUT US</a></li>
+					<li><a href="product.html">PRODUCTS</a></li>
+					<li><a href="news.html">BLOG</a></li>
+					<li><a href="promotion.html">PROMOTION</a></li>
+					
+				  	<li><button id="closemobilenavi"><i class="fa-regular fa-xmark"></i></button></li>
+				  </ul></div><!--mobile navi-->
+		  </div>
+	  </div><!--bgmobilenavi-->
+	  
+	  <!--MOBILE SEARCH-->
+	  <div class="container-fluid d-lg-none" id="bgmobilesearch">
+		  <div class="row">
+			  <div class="col-md-12
+						  col-sm-12
+						  col-12" id="mobilesearch">
+				  <form>
+					  <input type="text" placeholder="Search here..." id="mobilesearchfill">
+					  <button id="mobilesearchbtn">
+					  <i class="fa-regular fa-magnifying-glass"></i></button>
+				  </form>
+			  </div>
+		  </div>
+	  </div>
+	  <!--------------------------------------------------------------------------------------->
+	  <!-- Trang hien tai -->
+	  <div class="container">
+		  <div class="row">
+			  <div class="col-xl-12
+						  col-lg-12
+						  col-md-12
+						  col-sm-12
+						  col-12" id="addressbar">Home | <b>Payment</b><br><hr></div>
+		  </div></div>
+	  <!-- Trang Payment -->
+	  <div class="container-fluid" id="bgpayment">
+		  <div class="container">
+			  <div class="row">
+				  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" id="infodeli">
+					  <div class="titlepayment"><h4>Information Delivery</h4></div>
+					  <form>
+						  <div class="row">
+							  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								  <label for="namepay"><b>Your name</b></label>
+								  <input type="text" value="" placeholder="Type your name" id="namepay" class="form-control">
+							  </div>
+							  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+								  <label for="emailpay"><b>Your Email</b></label>
+								  <input type="text" value="" placeholder="Type your email" id="emailpay" class="form-control">
+							  </div>
+							  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+								  <label for="phonepay"><b>Your Phone</b></label>
+								  <input type="text" value="" placeholder="Type your phone number" id="phonepay" class="form-control">
+							  </div>
+							  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								  <label for="addresspay"><b>Your address</b></label>
+								  <input type="text" value="" placeholder="Type your address" id="addresspay" class="form-control">
+							  </div>
+							  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4" id="chooseward">
+								  <label for="chooseward"><b>Your Ward</b></label>
+								 <select class="custom-select">
+									 <option>Choose..</option>
+									 <option>1 Ward</option>
+									 <option>2 Ward</option>
+									 <option>3 Ward</option>
+								   </select>
+					   			</div>
+							  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4" id="choosedistrict">
+								  <label for="choosedistrict"><b>Your District</b></label>
+								 <select class="custom-select">
+									 <option>Choose..</option>
+									 <option>District 1</option>
+									 <option>District 2</option>
+									 <option>District 3</option>
+								   </select>
+					   			</div>
+							  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4" id="choosecity">
+								  <label for="choosecity"><b>Your City</b></label>
+								 <select class="custom-select">
+									 <option>Choose..</option>
+									 <option>Ha Noi City</option>
+									 <option>Da Nang City</option>
+									 <option>Ho Chi Minh City</option>
+								   </select>
+					   			</div>
+						  </div>
+					  </form><hr>
+					  <div class="row">
+						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">Sub total</div>
+						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pricesub">40 $</div>
+						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">Discount code</div>
+						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pricesub">-10 $</div>
+					  </div><hr style="border: 1pt dotted #bb2649">
+					  <div class="row">
+						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6"><h5>Total</h5></div>
+						  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 pricesub"><h5>30 $</h5></div>
+					  </div>
+				  </div><!--infodeli-->
+				  
+				  <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12" id="bgpaymentmethod">
+					  <div class="titlepayment"><h4>Payment Method</h4></div>
+					  <div class="row justify-content-center">
+					  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10" id="paycod">
+						  <input type="radio" name="pay" value="1" id="codpay">
+						   <label for="codpay"><h5>Payment on Delivery (COD)</h5></label><br>Note: Please contact support staff to check product inventory before payment!
+					  </div>
+					  <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-10" id="paybank">
+						  <input type="radio" name="pay" value="2" id="bankpay">
+						   <label for="bankpay"><h5>Bank transfer</h5></label>
+						  <div class="row">
+							  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								  <label for="namecard"><b>Name of card holder</b></label>
+								  <input type="text" value="" placeholder="Type your card name" id="namecard" class="form-control">
+							  </div>
+							  <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+								  <label for="numbercard"><b>Credit card number</b></label>
+								  <input type="text" value="" placeholder="Type your card number" id="numbercard" class="form-control">
+							  </div>
+							  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+								  <label for="expicard"><b>Expiration</b></label>
+								  <input type="text" value="" placeholder="00/00" id="expicard" class="form-control">
+							  </div>
+							  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6">
+								  <label for="cvvcard"><b>CVV</b></label>
+								  <input type="text" value="" placeholder="321" id="cvvcard" class="form-control">
+							  </div>
+						  </div>
+						  </div>
+						  <button class="col-xl-5 col-lg-6 col-md-5 col-sm-6 col-6 primarybutton">Complete Your Order</button>
+				  </div>
+					  
+				  </div><!--bgpaymentmethod-->
+				  
+			  </div>
+		  </div>
+	  </div>
+	  
+	  
+ 
+	  
+	  <!--------------------------------------------------------------------------------------->
+
+	  <!-- Subscribe -->
+	  <div class="container-fluid" id="bgsubcribe">
+		  <div class="container">
+			  <div class="row justify-content-center">
+				  <div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12" id="formsubcribe"><h4>Want to be the first to receive a special promotion?<br>Subcribe Now</h4>
+					  <form><input type="text" placeholder="Email...." name="subcribe" id="subcribefill"><a href=""><button id="subcribebtn">SEND</button></a></form>
+				  </div>
+			  
+		  </div>
+		  </div>
+		  
+	  </div>
+	  
+	  <!-- Footer -->
+	  <div class="container-fluid" id="bgfooter">
+		  <div class="container">
+			  <div class="row">
+				  <!--footer mobile-->
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footerframe" id="footerinfo_m">Information <i class="fa-regular fa-chevron-down"></i></div>
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footercontent" id="footercontentinfo">
+					  <p><strong>Address:</strong> 06 Thai Van Lung, Ben Nghe Ward, District 1, Ho Chi Minh City <br><strong>Tel:</strong> 028 39951703 - <strong>Fax:</strong> 028 3995 1702<br>Support call center (08:00-21:00, free)<br><strong>Call to buy:</strong> 1800545457 (key 1)<br><strong>Complaint:</strong> 1800565656 (2nd key)</p></div>
+				  <!--footer mobile 2-->
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footerframe" id="footerpolicy">Policy <i class="fa-regular fa-chevron-down"></i></div>
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footercontent" id="footercontentpolicy">
+					  <ul>
+						  <li><a href="">Warranty and Returns</a></li>
+						  <li><a href="">Shipping Policy</a></li>
+						  <li><a href="">Membership Policy</a></li>
+						  <li><a href="">Information privacy policy</a></li>
+					  </ul>
+				  </div>
+				  <!--footer mobile 3-->
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footerframe" id="footerlink_m">Link <i class="fa-regular fa-chevron-down"></i></div>
+				  <div class="col-md-12
+							  col-sm-12
+							  col-12 d-lg-none footercontent" id="footercontentlink">
+					  <ul>
+						  <li><a href="About_us.html">Story</a></li>
+						  <li><a href="">Q &amp; A</a></li>
+						  <li><a href="">Career</a></li>
+						  <li><a href="news.html">News</a></li>
+						  <li><a href="promotion.html">PROMOTION</a></li>
+						  <li><a href="Contact_us.html">Complaints</a></li>
+					  </ul>
+				  </div>
+				  
+				  <div class="col-xl-3
+							  col-lg-4" id="logofooter"><a href="#toppage"><img src="imgs/logo-02R_185x60px.png"></a><br><b>IRISES EYEWEAR JSC</b></div>
+				  
+				  <div class="col-xl-3
+							  col-lg-4 d-none d-lg-block" id="footerinfo"><b>Information</b><br>
+					  <p><strong>Address:</strong> 06 Thai Van Lung, Ben Nghe Ward, District 1, Ho Chi Minh City <br><strong>Tel:</strong> 028 39951703 - <strong>Fax:</strong> 028 3995 1702<br>Support call center (08:00-21:00, free)<br><strong>Call to buy:</strong> 1800545457 (key 1)<br><strong>Complaint:</strong> 1800565656 (2nd key)</p>
+				  </div><!-- footerinfo -->
+				  
+				  <div class="col-xl-3
+							  col-lg-2 d-none d-lg-block" id="footermenu1"><b>Policy</b>
+					  <ul>
+						  <li><a href="">Warranty and Returns</a></li>
+						  <li><a href="">Shipping Policy</a></li>
+						  <li><a href="">Membership Policy</a></li>
+						  <li><a href="">Information privacy policy</a></li>
+					  </ul>
+				  </div><!-- footermenu1 -->
+				  
+				  <div class="col-xl-3
+							  col-lg-2 d-none d-lg-block" id="footerlink"><b>Link</b>
+					  <ul>
+						  <li><a href="About_us.html">Story</a></li>
+						  <li><a href="">Q &amp; A</a></li>
+						  <li><a href="">Career</a></li>
+						  <li><a href="news.html">News</a></li>
+						  <li><a href="promotion.html">PROMOTION</a></li>
+						  <li><a href="Contact_us.html">Complaints</a></li>
+					  </ul>
+				  </div><!-- footerlink -->
+			  </div>
+		  </div>
+		  <div class="container">
+			  <div class="row">
+			  <div class="col-xl-5
+						  col-lg-5
+						  col-md-12
+						  col-sm-12
+						  col-12" id="certificate"><strong>Certificate of business registration: 18071995</strong></div>
+			  <div class="col-xl-3 offset-xl-4
+						  col-lg-4 offset-lg-3
+						  col-md-12
+						  col-sm-12
+						  col-12" id="footersocial"><strong>Follow us</strong> <a href=""><i class="fa-brands fa-facebook"></i></a> | <a href=""><i class="fa-brands fa-instagram"></i></a> | <a href=""><i class="fa-brands fa-youtube"></i></a></div>
+		  </div>
+		  </div>
+	  </div> <!--bgfooter-->
+		<div class="container-fluid" id="bgsubfooter">
+			<div class="container">
+			<div class="row justify-content-center">
+			<div class="col-xl-12
+						col-lg-12
+						col-sm-12
+						col-md-12
+						col-12" id="subfooter">Copyright 2023 <i class="fa-regular fa-copyright"></i> <b>IRISES EYEWEAR</b></div>
+			</div>
+	  </div>
+	  </div>
+
+  </body>
+</html>
